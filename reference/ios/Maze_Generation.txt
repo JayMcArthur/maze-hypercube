@@ -1,0 +1,8 @@
+1) define an N-dimensional Maze array MxMxMx … with each object in the array being ’not in the maze and ’not on the frointier’ and having all walls solid.
+2) define a one dimensional Frontier array of objects ‘on the frontier’ - the list is initially empty
+3) randomly pick one object in the Maze array that is ‘not in the maze’ to be ‘in the maze’
+
+4) select all objects in the Maze array that neighbor the one object that has just been selected to be ‘in the maze’ and, if it is not in the Frontier array, add it to the Frontier array.  Indicate in the Frontier array which additional wall could now connect that Frontier element to the Maze.
+5) if there are no objects in the Frontier array you are done.
+6) randomly select one object from the Frontier array, remove it from the Frontier, indicate in the Maze array that that element has been added to the Maze, pick one of its connecting walls and remove it, also remove that connecting wall from the element in the Maze array to which it has been connected.
+7) go to step 4.

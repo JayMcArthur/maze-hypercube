@@ -1,0 +1,8 @@
+/target/
+/.local-state/
+/verification/
+/dist/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
